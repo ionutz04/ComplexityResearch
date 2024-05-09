@@ -18,11 +18,6 @@ int main() {
             {"radix", [&]() { a.radix(); }},
             {"dumb", [&]() { a.aBitDum(); }}
     };
-    testSortingAlgorithms([&]() { QuickySort(); }, "QuickySort");
-    testSortingAlgorithms([&]() { SquareSort(); }, "SquareSort");
-    testSortingAlgorithms([&]() { SelectionSort(); }, "SelectionSort");
-    testSortingAlgorithms([&]() { radixSort(); }, "RadixSort");
-    testSortingAlgorithms([&]() { sortByBits(); }, "SortByBits");
     while (true) {
         string command;
         cout << "Enter sorting type ('binary', 'Smart', 'Medium', 'radix', 'dumb') or 'exit' to quit: ";
